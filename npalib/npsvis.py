@@ -1,19 +1,7 @@
 import pygame
+pygame.init()
 
-class InputLayer:
-    def __init__(self, numInputs, colour): #add more params later
-        self.numInputs = numInputs
-        self.colour = colour
-        
-        
-class OutputLayer:
-    def __init__(self, numOutputs, colour):
-        self.numOutputs = numOutputs
-        self.colour = colour
-        
-class InterLayer:
-    def __init__(self, numInputs, numOutputs, colour):
-        self.numInputs = numInputs
-        self.numOutputs = numOutputs
-        self.colour = colour
-        
+# Screen settings
+width, height = 800, 600
+screen = pygame.display.set_mode((width, height))
+pygame.display.set_caption('Neural Network Visualization')
